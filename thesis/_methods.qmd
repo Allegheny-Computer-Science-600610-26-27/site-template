@@ -86,7 +86,7 @@ table or a short list here, and then find the outcomes in Chapter Four.
 
 <!--
 List what a reader needs to reproduce the study: operating system, language and
-library versions, hardware (CPU, memory, GPU) when performance is measured,
+library versions, hardware (e.g., CPU, memory, GPU) when performance is measured,
 configuration files or flags, random seeds, and the exact commands to run.
 Prefer pointing at a repository file, for example `make experiments`, over
 transcribing commands that will drift out of date.
