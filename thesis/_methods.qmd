@@ -2,17 +2,115 @@
 
 This chapter answers the "how" question - how did you complete your project,
 including the overall design of your study, details of the algorithms and tools you
-have used, etc.  Use technical diagrams, equations, algorithms, and paragraphs of text
+have used, etc. Use technical diagrams, equations, algorithms, and paragraphs of text
 to describe the research that you have completed. Be sure to number all figures and
 tables and to explicitly refer to them in your text.
 
-This should contain:
+<!--
+WRITING GUIDE for Chapter Three
 
-* lists
-* with points
-* and more points
-  * possibly subpoints
+HTML comments are stripped from the PDF and the website; they are here for you
+to read while you draft.
 
-For those projects whose implications address social or moral issues (i.e. ethical
+THE TEST OF THIS CHAPTER IS REPRODUCTION
+
+Assume the reader is another 600-level student who has your repository and this
+chapter but has never met you. Could they rerun your study and get comparable
+results? If not, the chapter is missing something. Can you first and second
+reader(s) study this method and see clearly that you understand all of the
+technical details in this project? If not, then the chapter is missing
+something that shows you did furnish sufficient the technical details.
+
+WHAT TO COVER
+
+Address the items that apply to your project (the syllabus expects at least five
+of them): algorithms, programming languages, libraries, platforms, frameworks,
+software, hardware, data, and theories. Always give versions, because versions
+change behavior: "Python 3.11 and scikit-learn 1.4.0", not "Python and a machine
+learning library". Record anything a reader must install or configure.
+
+JUSTIFY, DO NOT ONLY DESCRIBE
+
+"We used PostgreSQL" is a description. "We used PostgreSQL because the workload
+is write-heavy and we needed multi-row transactions; SQLite would have been
+simpler to deploy but would have serialized our concurrent writers" is a
+justification. Whenever you chose between two reasonable options, say what you
+chose, why, and what you gave up. Design decisions are the scientific content of
+this chapter.
+
+CONNECT TO THE REPOSITORY AND TO THE EVALUATION
+
+Link to the artifact repository by URL, and show at least one input and the
+corresponding output so that the reader can see the artifact's contract. Then
+make sure every mechanism you describe here is exercised by an experiment in
+Chapter Four: a component that no experiment touches is unexplained work.
+-->
+
+## Research Design
+
+<!--
+Describe the overall shape of the study in one paragraph and in one figure:
+what you built, what you ran, and what you measured. Then say how this design
+answers the research questions stated in Chapter One.
+-->
+
+## System Architecture
+
+<!--
+A component diagram is usually the single most valuable figure in the thesis.
+Show the major parts of the artifact, the direction of data flow, and the
+boundary between what you wrote and what you depend on. Refer to the figure in
+the text ("Figure 1 shows ...") and orient the reader before the figure appears.
+-->
+
+## Data
+
+<!--
+For any dataset: where it came from (URL and license), how you obtained it, how
+large it is, what one record looks like, what you cleaned or filtered out, and
+what you cannot claim because of how it was collected. Provenance is part of
+the method, not an appendix.
+-->
+
+## Experimental Setup
+
+<!--
+Chapter Four reports what happened when you ran the study; this section describes
+what the study *is*, before any result exists. State the independent variables
+you manipulate, the dependent variables you measure, the conditions you compare,
+and how many repetitions you run. A reader should be able to see the design as a
+table or a short list here, and then find the outcomes in Chapter Four.
+-->
+
+## Reproducibility
+
+<!--
+List what a reader needs to reproduce the study: operating system, language and
+library versions, hardware (CPU, memory, GPU) when performance is measured,
+configuration files or flags, random seeds, and the exact commands to run.
+Prefer pointing at a repository file, for example `make experiments`, over
+transcribing commands that will drift out of date.
+-->
+
+## Inputs and Outputs
+
+<!--
+Show one realistic input and the corresponding output, and explain the artifact's
+contract: what it accepts, what it rejects, and what it does with invalid input.
+Complete installation and usage details belong in the `README.md` of the artifact
+repository; link to it rather than duplicating it.
+-->
+
+## Ethical Considerations in the Method
+
+<!--
+Describe the interventions you built into the method itself: how you handled
+personal or sensitive data, how you documented licensing and consent, what
+safeguards prevent misuse of the artifact, and how you mitigated bias in data or
+in evaluation. Keep this specific to what you actually did. It is fine to say
+that an issue does not apply, as long as you say why.
+
+For those projects whose implications address social or moral issues (i.e., ethical
 standards, causes, effects), you will want to use this section to describe how you
 actively mitigated or considered these issues.
+-->
