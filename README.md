@@ -25,6 +25,7 @@ which you leave alone.
 | `thesis/references.bib` | Every source you cite | **Yes** |
 | `_extensions/ReadyResearchersTemplates/` | The Allegheny CIS PDF format (LaTeX template) | Rarely |
 | `.github/workflows/` | GitHub Actions that build the site and release the PDF | No |
+| `.github/scripts/enable-pages.sh` | Helper that enables Pages across repositories (coordinator only) | No |
 
 ## Quick Start: The Steps in Order
 
@@ -48,7 +49,8 @@ the [Journal Schedule](#journal-schedule).
    --to allegheny-cis-pdf` and read the PDF you produced. See [Building the
 Site and the PDF Locally](#building-the-site-and-the-pdf-locally).
 7. **Publish the journal.** Commit and push to `main`; GitHub Actions builds
-   the site and deploys it to GitHub Pages. See [Enabling Site
+   the site and deploys it to GitHub Pages. The repository needs Pages enabled
+   once before the first deploy succeeds. See [Enabling Site
 Build](#enabling-site-build).
 8. **Release the thesis PDF.** Tag a commit with a Semantic Versioning number,
    then push with `--tags`. Your readers only read tagged releases. See
@@ -241,8 +243,75 @@ enabling site build for your research journal. With that said, each student
 researcher should invest the time needed to troubleshoot the setup of their own
 research journal and the deployment of it to GitHub Pages. Please note that a
 working deployment should also feature a link to the PDF that contents the
-chapters of your senior thesis. The following steps are provided to help you
-enable site build for your research journal:
+chapters of your senior thesis.
+
+The `Build Research Journal` workflow renders the site on every push to `main`
+and then deploys it. Building always works; **deploying needs the repository to
+have a GitHub Pages site once.**
+
+#### Why the workflow cannot do this by itself
+
+GitHub does not allow a workflow to create the Pages site for its own repository.
+`GITHUB_TOKEN` has no permission to call *Create a GitHub Pages site*, so a
+workflow can deploy to an existing site but can never publish for the first time
+on a fresh repository. This is a platform restriction, not a bug in this
+template; see
+[actions/configure-pages issue #48](https://github.com/actions/configure-pages/issues/48).
+
+This template handles that situation gracefully: when Pages is not enabled, the
+workflow still builds the journal and the thesis PDF, writes an explanation into
+the run summary, and **skips** the deploy step instead of failing. You get a green
+run with a warning instead of a red X.
+
+#### Option 1 (recommended for the course coordinator): enable every repository at once
+
+The repository owner can enable Pages once per repository, after which every
+later build deploys with no intervention. The script
+`.github/scripts/enable-pages.sh` does this for a whole organization:
+
+```bash
+# Authenticate with an account that has admin rights on the repositories
+gh auth status
+
+# Preview what would change; this changes nothing
+./.github/scripts/enable-pages.sh --dry-run Allegheny-Computer-Science-600610-26-27
+
+# Enable Pages (source: GitHub Actions) on the repositories you deploy
+./.github/scripts/enable-pages.sh Allegheny-Computer-Science-600610-26-27 site-template
+./.github/scripts/enable-pages.sh Allegheny-Computer-Science-600610-26-27 -site
+
+# Or do a single repository by hand
+gh api -X POST repos/OWNER/REPO/pages -f build_type=workflow
+```
+
+The script is idempotent: it reports `ok` for repositories that already build with
+GitHub Actions, `updated` for repositories that publish from a branch, and
+`enabled` for repositories that had no Pages site. Always start with `--dry-run`,
+because a bare organization name matches every repository in the organization.
+
+#### Option 2: let each repository enable itself with an organization secret
+
+If you want a student repository to enable itself on its first push, add a secret
+named `PAGES_TOKEN` to the organization and grant it to the repositories for this
+assignment. The workflow already uses it when it exists:
+
+```yaml
+- name: Configure Pages
+  uses: actions/configure-pages@v5.0.0
+  with:
+    enablement: true
+    token: ${{ secrets.PAGES_TOKEN || github.token }}
+```
+
+The token must be a personal access token with the `repo` scope, or a GitHub App
+token with `administration:write` and `pages:write`. Treat it as sensitive: it can
+administer every repository the organization grants it to, so do not expose it to
+repositories that you do not control.
+
+#### Option 3: enable it yourself, in the browser
+
+The following steps are provided to help you enable site build for your research
+journal:
 
 1. Go to the `Settings` menu on this repository and locate the `Pages` submenu.
 
@@ -251,6 +320,8 @@ enable site build for your research journal:
 2. On the resulting screen, find the `Build and deployment` menu; select `GitHub Actions`
 
 ![GitHub pages, Build and Deployment item](https://raw.githubusercontent.com/ReadyResearchersTemplates/site-template/media/img/600%20-%20Site%20Template%20-%20Github%20Actions%20Menu.png)
+
+3. Re-run the `Build Research Journal` workflow from the `Actions` tab.
 
 ### `Private` vs. `Public` availability
 
@@ -408,6 +479,9 @@ artificial intelligence tools before you begin writing.
 | LaTeX error about a missing package or font | Run `quarto install tinytex`, then render again. |
 | The tag built a PDF but no Release appeared | The tag has fewer than two dots, or Actions lacks write permission. See [Release Tagging](#release-tagging). |
 | The journal site shows an old version | The Pages deployment failed or is still running. Check the `Actions` tab, then hard-refresh the browser. |
+| `Get Pages site failed ... Error: Not Found` | The repository has no GitHub Pages site. The build itself is fine; enable Pages once. See [Enabling Site Build](#enabling-site-build). |
+| The run is green but there is no website | Pages is not enabled, so the deploy step was skipped by design. Enable Pages, then re-run the workflow. |
+| `Create Pages site failed: Resource not accessible by integration` | You set `enablement: true` with the default `GITHUB_TOKEN`, which is not allowed to create a Pages site. Use a `PAGES_TOKEN` secret or enable Pages once by hand. |
 | A journal post is missing from the listing | The post has no `date` in its YAML header, or the post is not inside a folder listed in `index.qmd`. |
 | The PDF still contains template text | You have not completed [Removing the Template Text](#removing-the-template-text). |
 | Charts or figures overflow the page | Reduce the figure width in the chunk options (for example `#| fig-width: 4`). |
