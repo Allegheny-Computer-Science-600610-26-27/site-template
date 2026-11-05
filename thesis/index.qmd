@@ -12,6 +12,23 @@ format:
 natbiboptions: numbers
 # EDIT AT YOUR OWN PERIL #
 
+# PERSONALIZE THESE FIELDS BEFORE YOUR FIRST BUILD. See the section
+# "Personalizing the Template" in README.md.
+#
+#   title         The title of your senior comprehensive project. Keep it
+#                 identical in the course metadata file, in _quarto.yml, and in
+#                 your journal posts, because readers compare them.
+#   firstreader   The name of your first reader.
+#   secondreader  The name of your second reader.
+#   author        Your name, your email, and your affiliation.
+#   abstract      Printed on the title page. Replace the placeholder with
+#                 150-250 words that state the problem, your approach, your
+#                 main result, and your contribution. Write it last, once
+#                 Chapter Five is stable.
+#
+# Everything outside these fields is template machinery. Changing it can break
+# the PDF build.
+
 title: Senior Thesis Title
 
 firstreader: First Reader
@@ -33,46 +50,51 @@ abstract: |
   A well-researched student project. Like very.
 ---
 
-# Template description
+## Template description
 
 This repository contains the starter materials for your thesis in Computer
 Science 600 and 610. The main directory of this repository contains the Markdown
 template for a project designed for use with GitHub Classroom. To learn more about
 the course in which these assignments were completed, please refer to the `README.md` file.
 
-The template specifies various settings in the `_metadata.yml` file included in the
-repository. Change the appropriate values under the `Project-specific values`
-heading. Changing other values outside of that section may cause the project to
-fail to build. **Modify these values at your own risk.**
+The template specifies various settings in the front matter of this file and in
+the `_quarto.yml` file at the root of the repository. Change the values marked
+with a `PERSONALIZE` comment in this file, and the `author` and `website` values
+in `_quarto.yml`. Changing other values may cause the project to fail to build.
+**Modify these values at your own risk.**
 
-Author your thesis in the `index.md` document using appropriate Markdown
-hierarchy and syntax; GitHub Actions will automatically create a PDF from the relevant
-files.. Consult the `README` of the proposal repository to learn how to properly build
-and release this PDFs.
+Write your thesis in the chapter files in this directory (`_introduction.qmd`,
+`_related_work.qmd`, `_methods.qmd`, `_experiments.qmd`, and `_conclusion.qmd`)
+using appropriate Markdown hierarchy and syntax. This file assembles the
+chapters into one document; GitHub Actions will automatically create a PDF from
+the result. Consult the `README.md` file of this repository to learn how to
+build, preview, and release this PDF.
 
-## Citations and references
+### Citations and references
 
-Including references throughout requires a specific pseudo-Markdown tag, demonstrated
-in the following blockquote. (Inspect the `thesis.md` file to see the format.)
+Including references throughout requires a specific citation tag, demonstrated
+in the following blockquote. (Inspect this file to see the format, and add your
+sources to `references.bib`.)
 
 > A citation, when included correctly, will appear as it does at the end of this
 > sentence. [@plaat1996research]
 
-## Labeling figures
+### Labeling figures
 
-To label a figure (i.e. an image), referencing the image using correct Markdown
-will automatically caption the figure:
+To label a figure (i.e., an image), reference the image using correct Markdown
+and the renderer will caption and number the figure automatically. Refer to the
+figure by number in your text:
 
 ```markdown
 ![Label](images/IMAGE_NAME.png)
 ```
 
-## Labeling tables
+### Labeling tables
 
 To provide a label for a table, write a short caption for the table and prefix the caption
 with `Table:` as in the example below:
 
-```
+```text
 Table: A two-row table demonstrating tables
 
 |Row number | Description |
@@ -81,31 +103,59 @@ Table: A two-row table demonstrating tables
 |2          |Row 2        |
 ```
 
-## Other template information
+### Other template information
 
 Two things specific to this template to also keep in mind:
 
 1. It is your responsibility to remove this description section before building
-the PDF version you plan to defend.
-2. References _will only appear if cited correctly_ in the text
+   the PDF version you plan to defend.
+2. References _will only appear if cited correctly_ in the text.
 
-## Note on `LaTeX` commands
+### Note on `LaTeX` commands
 
 Documents may include specific `LaTeX` commands _in Markdown_. To render these, surround the commands
 with markup denoting `LaTeX`. For example:
 
-```
+```text
 Checkmark character:   $\checkmark$
 Superscript character: $^{\dag}$
 ```
 
 If using a special package not included in the template, add the desired `LaTeX`
-package or command/macro to the `header-includes` property in [config.yaml](config.yaml).
+package or command/macro to the `header-includes` property in the `format`
+block of this file.
 
 Should this package not be included in the environment shipped with this template,
 you may also need to add the package to the [GitHub Actions Workflow](.github/workflows/main.yml).
 
 Direct any questions about issues to your first reader.
+
+<!--
+BEFORE YOU BUILD THE RELEASE YOU WILL NEED TO TAKE THE FOLLOWING STEPS!
+
+This checklist is a comment, so it will not appear in your PDF. Work through it
+before your final tagged release; the syllabus requires that no template text
+remains in the thesis you submit.
+
+- [ ] Delete this entire "Template description" section, from the
+      "# Template description" heading down to the sentence above.
+- [ ] Replace the abstract with your own 150-250 word summary.
+- [ ] Confirm the title, both reader names, and your author details on the title
+      page of the built PDF.
+- [ ] Delete the prompt paragraphs that begin "This chapter ..." or "This
+      document requires ..." in each chapter file, and delete any placeholder
+      heading you did not use.
+- [ ] Check the table of contents of the built PDF: every entry should be text
+      that you wrote.
+- [ ] Confirm that every source you mention is cited as `[@key]`, that each key
+      exists in `references.bib`, and that the reference list renders.
+- [ ] Confirm that figures and tables are numbered, captioned, and referred to in
+      the text.
+- [ ] Read the PDF once on a printed page or a small screen; that is how your
+      readers will see it.
+- [ ] Tag and release the PDF. Your readers only read tagged releases, never a
+      local build.
+-->
 
 {{< include _introduction.qmd >}}
 
