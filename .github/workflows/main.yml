@@ -5,22 +5,30 @@ on:
       - main
     tags-ignore:
       - "*.*.*"
+  # Lets you re-run the site build from the Actions tab without pushing a commit.
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# One deployment at a time; never cancel a deployment that is already running.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    outputs:
+      # "true" only when GitHub Pages is enabled and configured for Actions.
+      pages-ready: ${{ steps.pages.outcome == 'success' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.7
-        if: always()
       - name: Setup Python
-        if: always()
         uses: actions/setup-python@v5.1.1
         with:
           python-version: "3.14"
@@ -32,24 +40,52 @@ jobs:
           sudo python -m pip install yq
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        if: always()
-      - name: Create LaTeX enviroment
+      - name: Create LaTeX environment
         run: |
           quarto install tinytex
-        if: always()
-      - name: Setup Pages
+
+      # `enablement: true` asks the action to create the Pages site when it does
+      # not exist yet. GitHub does not let GITHUB_TOKEN create a Pages site
+      # (configure-pages issue #48), so this only succeeds when a privileged
+      # token is supplied through the optional PAGES_TOKEN secret. When the site
+      # already exists, this step succeeds with the default token.
+      #
+      # continue-on-error keeps a fresh student repository from failing the
+      # whole build just because Pages has not been enabled yet.
+      - name: Configure Pages
+        id: pages
+        continue-on-error: true
         uses: actions/configure-pages@v5.0.0
-        if: always()
+        with:
+          enablement: true
+          token: ${{ secrets.PAGES_TOKEN || github.token }}
+      - name: Explain a missing Pages site
+        if: steps.pages.outcome != 'success'
+        run: |
+          echo "::warning title=GitHub Pages is not enabled::This repository has no GitHub Pages site, so nothing was deployed. The build and the thesis PDF still work. Enable Pages once under Settings > Pages > Build and deployment > Source: GitHub Actions, then re-run this workflow, or ask your course coordinator to enable it for you."
+          {
+            echo "### GitHub Pages is not enabled"
+            echo ""
+            echo "The journal was built, but it cannot be published because this"
+            echo "repository has no GitHub Pages site yet."
+            echo ""
+            echo "\`Settings\` -> \`Pages\` -> \`Build and deployment\` -> \`Source: GitHub Actions\`"
+            echo ""
+            echo "Then re-run this workflow. See the README, section"
+            echo "\"Enabling Site Build\", for details."
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Build with Quarto
         run: |
           quarto render
-        if: always()
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: ./_site
-        if: always()
+
   deploy:
+    # Skip the deployment instead of failing when Pages is not configured.
+    if: needs.build.outputs.pages-ready == 'true'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
