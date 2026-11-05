@@ -24,7 +24,7 @@ which you leave alone.
 | `thesis/_introduction.qmd` … `thesis/_conclusion.qmd` | The five thesis chapters | **Yes** |
 | `thesis/references.bib` | Every source you cite | **Yes** |
 | `_extensions/ReadyResearchersTemplates/` | The Allegheny CIS PDF format (LaTeX template) | Rarely |
-| `.github/workflows/` | GitHub Actions that build the site and release the PDF | No |
+| `.github/workflows/` | GitHub Actions that build the site and release the PDF | Rarely |
 | `.github/scripts/enable-pages.sh` | Helper that enables Pages across repositories (coordinator only) | No |
 
 ## Quick Start: The Steps in Order
@@ -414,7 +414,7 @@ you from performing an automated release.
 
 When you make subsequent changes to your files and perform commits and you are
 ready to release a new version of `SeniorThesis.pdf`, then you should
-again tag your work _before a `push` command_ with a tag that
+again tag your work *before a XXXXXX command* with a tag that
 adheres to the [Semantic Versioning](http://semver.org/) standard.
 
 Each time that you correctly execute this sequence of commands you will release
