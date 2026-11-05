@@ -200,7 +200,15 @@ Output always lands in `_site/`, because that directory is set by
 | `quarto render thesis/index.qmd` | `_site/thesis/index.html` and `_site/thesis/index.pdf` |
 | `quarto render thesis/index.qmd --to allegheny-cis-pdf` | `_site/thesis/index.pdf` only |
 
-Two things that surprise students:
+Three things that sometimes surprise students:
+
+- **`quarto preview` does not build the PDF.** It serves the HTML version of the
+  journal and skips the PDF. Run `quarto preview --render all` if you want the
+  PDF produced when the preview starts. Preview also watches only the documents
+  it rendered, not the chapter partials those documents include, so saving
+  `thesis/_methods.qmd` does **not** refresh `thesis/index.html` or the PDF.
+  After you edit a chapter, run
+  `quarto render thesis/index.qmd --to allegheny-cis-pdf` to see the change.
 
 - **Do not render a chapter file directly.** Running
   `quarto render thesis/_methods.qmd` fails with
