@@ -1,0 +1,46 @@
+---
+title: "Reflection: The Current Version of My Computational Artifact"
+description: "Reflect on the state of the computational artifact for my senior comprehensive project."
+date: "2026-11-12"
+---
+
+**Requirement:** Reflect on the current version of your computational artifact.
+
+## Where the artifact stands
+
+Name the current version or tag of your artifact (for example, a commit hash or a
+`0.x.y` tag), link to the repository, and describe in two or three sentences what
+the artifact does today.
+
+## What works
+
+Describe the features you have finished and the evidence you have that they
+work. Point to tests, benchmarks, demonstrations, or documentation a reader could
+inspect.
+
+## What does not work yet
+
+Be specific about the gaps: unfinished features, known defects, incomplete
+documentation, and anything a user would trip over today.
+
+## What I have learned
+
+Reflect on a design decision you would make differently now that you have built
+part of the artifact, and explain what changed your mind.
+
+## Ethical considerations
+
+Describe any issue involving privacy, accuracy, misuse, third-party risk, data
+collection, bias, or equity that became visible as the artifact took shape, and
+what you have done or still must do about it.
+
+## Next steps
+
+List the work remaining before a `1.0` release, and estimate which of those items
+you can complete before the end of the semester.
+
+## Reminders
+
+- Consult the course syllabus for the expected length and evaluation criteria.
+- Your final `changelog` post must summarize the work leading to this `1.0`
+  release.

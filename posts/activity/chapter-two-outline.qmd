@@ -1,0 +1,47 @@
+---
+title: "Activity: Chapter Two Outline"
+description: "Provide and justify the planned outline for Chapter Two of my senior thesis."
+date: "2026-11-12"
+---
+
+**Requirement:** Provide and justify the outline for Chapter Two of your senior
+thesis.
+
+Chapter Two is the `Related Work` chapter. See `thesis/_related_work.qmd` for the
+chapter starter and `CONTRIBUTING.md` for the required content of this chapter.
+
+## Outline of Chapter Two
+
+Replace the numbered list below with the thematic or chronological structure you
+plan to use, including the sources you expect to discuss in each section.
+
+1. Theme or period one
+   - Sources to review, and the position each source will occupy.
+2. Theme or period two
+   - Sources to review, and how they relate to or conflict with the first group.
+3. Gap this project fills
+   - What the literature leaves unresolved and how this project responds.
+
+## Justification of the outline
+
+Explain why you chose this organization over the alternatives. Address:
+
+1. Why themes, chronology, or source type is the most useful organization for
+   this literature.
+2. How the sections move the reader toward the gap that your project addresses.
+3. Where you will discuss relationships, agreements, and contradictions among
+   sources rather than summarizing each source in isolation.
+
+## Planned length and sources
+
+- Approximate number of words planned for this chapter:
+- Approximate number of sources planned for this chapter:
+- Sources already located and verified:
+
+## Reminders
+
+- Every entry in the outline must correspond to a real, verified source that
+  will be cited in ACM format.
+- Connect this chapter to the ethical discussion opened in Chapter One.
+- Consult the course syllabus for the expected length and evaluation criteria
+  for the `600`-level submission of this chapter.

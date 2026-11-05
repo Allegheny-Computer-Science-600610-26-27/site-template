@@ -1,0 +1,41 @@
+---
+title: "Reflection: Preparing for and Giving My Presentation"
+description: "Reflect on my experiences preparing for and delivering my senior comprehensive project presentation."
+date: "2026-12-03"
+---
+
+**Requirement:** Reflect on your experiences preparing for and giving your
+presentation.
+
+## Preparing
+
+Describe the process you followed to plan the presentation: the story you chose
+to tell, the slides or demonstrations you built, the rehearsals you completed,
+and how much time each stage required.
+
+## Delivering
+
+Describe how the presentation actually unfolded. What went as planned, and what
+did not? Consider pacing, the demonstration, the clarity of your framing, and how
+you handled the room.
+
+## Questions and discussion
+
+Summarize the questions you received and how you answered them. Note any question
+that revealed a gap in the project, the thesis, or your own understanding.
+
+## Feedback received
+
+Record the substantive feedback you received from your first reader, second
+reader, classmates, and instructors, and say what you intend to do with it.
+
+## What I would change
+
+If you gave the presentation again, what would you keep, cut, or restructure, and
+why?
+
+## Reminders
+
+- Consult the course syllabus for the expected length and evaluation criteria.
+- Any project or thesis change prompted by this reflection should be recorded in
+  the `changelog` post for your `1.0` release.

@@ -1,0 +1,35 @@
+---
+title: "Activity: State and Explain the Title"
+description: "State the title of my senior comprehensive project and explain what it promises the reader."
+date: "2026-11-05"
+---
+
+**Requirement:** State and explain the title of your senior comprehensive project.
+
+## The title
+
+> Replace this blockquote with the working title of your senior comprehensive
+> project.
+
+## What the title promises
+
+Explain, in your own words, what a reader should expect that the project
+delivers, based on the title alone. Address each part of the title separately:
+the subject matter, the approach or intervention, and the expected outcome.
+
+## What the title leaves out
+
+Every title is a compression. Identify the scope, assumptions, or audiences that
+the title does not convey and explain why they are omitted.
+
+## Titles I considered and rejected
+
+Describe at least two alternative titles and explain why you discarded them.
+What did each alternative emphasize or overpromise?
+
+## Reminders
+
+- Use the same title here, on your research journal, and in `thesis/index.qmd`.
+- Cite sources in ACM format whenever you refer to prior work by other
+  researchers.
+- Consult the course syllabus for the expected length and evaluation criteria.

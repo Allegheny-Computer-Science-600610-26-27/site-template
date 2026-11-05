@@ -1,0 +1,38 @@
+---
+title: "Feedback: On Work in the 600-Level Course"
+description: "Feedback for my classmates and my instructors on work in CMPSC 600."
+date: "2026-11-19"
+---
+
+**Requirement:** Offer feedback to both your classmates and your instructors on
+work in the 600-level course in Computer and Information Science.
+
+Write feedback that is specific, actionable, and grounded in evidence from the
+semester. Prefer an example over a generalization, and pair every critique with a
+suggestion.
+
+## Feedback for my classmates
+
+Describe how the peer review process and the class sessions shaped your work.
+
+- A specific piece of feedback from a classmate that changed my project:
+- Feedback I gave that I believe was useful, and why:
+- How the cohort's presentations and drafts influenced my own:
+
+## Feedback for my instructors
+
+- What supported my learning most this semester, and why it worked:
+- What I found confusing, redundant, or underspecified:
+- A concrete suggestion for the next offering of this course:
+
+## For the course as a whole
+
+- The assignment or activity I would keep unchanged:
+- The assignment or activity I would redesign, and how:
+- Resources, examples, or scaffolding that would have helped me earlier:
+
+## Reminders
+
+- Refer to classmates and instructors respectfully; this post is published on
+  your research journal site.
+- Consult the course syllabus for the expected length and evaluation criteria.

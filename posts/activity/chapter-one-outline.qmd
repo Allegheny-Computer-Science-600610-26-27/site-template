@@ -1,0 +1,47 @@
+---
+title: "Activity: Chapter One Outline"
+description: "Provide and justify the planned outline for Chapter One of my senior thesis."
+date: "2026-11-05"
+---
+
+**Requirement:** Provide and justify the outline for Chapter One of your senior
+thesis.
+
+Chapter One is the `Introduction` chapter. See `thesis/_introduction.qmd` for the
+chapter starter and `CONTRIBUTING.md` for the required content of this chapter.
+
+## Outline of Chapter One
+
+Replace the numbered list below with the section structure you plan to use,
+including one line of description per section.
+
+1. Motivation
+   - The problem, the audience that experiences it, and why it matters now.
+2. Current State of the Art
+   - What existing approaches do, and where they fall short.
+3. Goals of the Project
+   - The aims and objectives of this project, stated concretely.
+4. Ethical Implications
+   - The harms, stakeholders, and mitigations this project must address.
+
+## Justification of the outline
+
+For each section above, answer three questions:
+
+1. Why does this section belong in Chapter One rather than in Related Work,
+   Methods, or Experiments?
+2. What will a reader understand after reading this section that they did not
+   understand before?
+3. What evidence or citation will support the claims made in this section?
+
+## Planned length and sources
+
+- Approximate number of words planned for this chapter:
+- Approximate number of sources planned for this chapter:
+
+## Reminders
+
+- The outline should match the headings you actually use in
+  `thesis/_introduction.qmd` once you begin drafting.
+- Consult the course syllabus for the expected length and evaluation criteria
+  for the `600`-level submission of this chapter.

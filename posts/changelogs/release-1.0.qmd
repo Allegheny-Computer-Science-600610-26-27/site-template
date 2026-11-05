@@ -1,0 +1,54 @@
+---
+date: "2026-12-03"
+"Thesis Version": 1.0.0
+"Artifact Version": 1.0.0
+---
+
+**Requirement:** Summarize all work completed leading up to a `1.0` release of
+your senior comprehensive project that is visible through a website hosted on
+GitHub Pages and a release of your senior thesis as a PDF document through the
+`Releases` tab inside of your GitHub repository.
+
+## Thesis {{< meta "Thesis Version" >}}
+
+Link to the `SeniorThesis-1.0.0` release in the `Releases` tab of this repository
+and state, in a sentence, what a reader receives by downloading it.
+
+### Changes
+
+- Describe the revisions made to the Introduction since the previous release.
+- Describe the revisions made to Related Work since the previous release.
+- Note any chapter reordering, retitling, or restructuring.
+- Record feedback from your first reader and second reader that this release
+  incorporates.
+- List any requirements you know remain unmet, and why.
+
+## Artifact {{< meta "Artifact Version" >}}
+
+Link to the `1.0.0` release of the computational artifact and to the GitHub Pages
+site where it is documented.
+
+### Features
+
+- Feature or capability added in this release.
+- Feature or capability added in this release.
+
+### Changes
+
+- Describe the significant design decision made during this release.
+- Describe the ethical safeguard added or strengthened in this release.
+- Describe a performance, usability, or documentation improvement.
+
+### Fixes
+
+- Defect resolved in this release, and how it was found.
+- Defect resolved in this release, and how it was found.
+
+## Release evidence
+
+Confirm each item before publishing this post:
+
+- [ ] The research journal site builds and is published through GitHub Pages.
+- [ ] `SeniorThesis.pdf` is attached to a tag of `1.0.0` in the `Releases` tab.
+- [ ] The artifact is tagged `1.0.0` in its own repository.
+- [ ] Every source referenced above is cited correctly and resolves.
