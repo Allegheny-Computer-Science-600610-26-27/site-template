@@ -15,7 +15,7 @@ build your thesis document as a website and a PDF.
 ### Research Journal
 
 Your research journal contains short posts in one of the following categories:
-`reflection`, `feedback`, `activity`, and `changelog`. For the Fall 2025
+`reflection`, `feedback`, `activity`, and `changelog`. For the Fall 2026
 semester, you are responsible for writing the following posts:
 
 - Two `reflection` posts:
@@ -35,7 +35,7 @@ semester, you are responsible for writing the following posts:
     `Releases` tab inside of your GitHub repository
 
 Your writing assignments for the 610-level course will be released during the
-upcoming Spring 2026 semester.
+upcoming Spring 2027 semester.
 
 ### Senior Thesis Chapters
 
