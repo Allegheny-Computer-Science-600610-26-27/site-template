@@ -1,10 +1,65 @@
 # Related work
 
 This chapter includes a broad and detailed review of relevant existing work.
-The literature review should provide background and context for the thesis work.
-The subsections may be organized in whatever manner seems best suited to the material--
-chronological, or by topic, or according to some other criteria
+The literature review should provide background and context for the thesis
+work. The subsections may be organized in whatever manner seems best suited to
+the material --- chronological, or by topic, or according to some other criteria
 (e.g., primary versus secondary resources).
 
 If ethical issues are central to this work, you should also address historical and
 contemporary issues or efforts made to address them.
+
+<!--
+WRITING GUIDE for Chapter Two
+
+HTML comments are stripped from the PDF and the website; they are here for you
+to read while you draft.
+
+WHAT MAKES THIS A REVIEW RATHER THAN A LIST
+
+The most common weakness in an undergraduate thesis is the "laundry list": one
+paragraph per paper, each saying what that paper did, with no connection between
+them. A review does something different:
+
+- Group sources by theme or approach, not one paragraph per paper.
+- Within a group, compare sources: what problem did each solve, what method did
+  each use, what did each find, what did each assume, and what did each miss?
+- Make disagreements explicit. If two papers reach different conclusions, say
+  so, and explain why the difference matters for your project.
+- Say what each group of work means for your project. A source that is only
+  summarized but never used is a source you should probably cut.
+
+BUILD A COMPARISON TABLE FIRST
+
+Synthesis is much easier to write after you have a table. Draft this privately,
+then turn the rows into prose:
+
+| Source | Problem | Method | Key finding | Limitation | Relation to this project |
+|:-------|:--------|:-------|:------------|:-----------|:------------------------|
+| [@key] | ...     | ...    | ...         | ...        | ...                     |
+
+Sources that land in the same row pattern usually belong in the same subsection.
+
+FINDING SOURCES
+
+Use subject databases (ACM Digital Library, IEEE Xplore, Springer Link,
+ScienceDirect) and Google Scholar, then "snowball": read the reference lists of
+the two or three papers you trust most and follow the citations backward to the
+foundational work and forward to recent work. Prefer peer-reviewed venues. A
+tool's documentation or a blog post can be cited for how a tool behaves, but it
+cannot support a scientific claim. There is no required source count per
+chapter, but the completed thesis requires at least twelve references.
+
+CLOSING THE CHAPTER
+
+End with the gap: the specific unresolved issue, missed opportunity, or
+contradiction in the literature that your project addresses. Write it as one
+clear paragraph that a reader could quote, and make sure Chapter One's goals
+match it. That paragraph is the hinge between this chapter and your method.
+
+CITING
+
+Add each source to `thesis/references.bib` and cite it inline as `[@key]`, for
+example `[@plaat1996research]`. Never type a citation as plain text: if it is
+not in the bibliography database, it will not appear in the reference list.
+-->
