@@ -9,9 +9,10 @@ thesis document as a website and a PDF.
 
 ## How This Repository Works
 
-Nearly every file you care about is a Quarto (`.qmd`) document: Markdown with a
-short YAML header. Save the file, run `quarto preview`, and your work appears in
-a browser. The table below says which files you edit and which you leave alone.
+Nearly every file you care about is a Quarto (`.qmd`) document, consisting of a
+Markdown with a short YAML header. Save the file, run `quarto preview`, and
+your work appears in a browser. The table below says which files you edit and
+which you leave alone.
 
 | Path | What it is | Edit it? |
 |:-----|:-----------|:---------|
@@ -22,7 +23,7 @@ a browser. The table below says which files you edit and which you leave alone.
 | `thesis/index.qmd` | Thesis title page, abstract, and chapter assembly | **Yes** |
 | `thesis/_introduction.qmd` … `thesis/_conclusion.qmd` | The five thesis chapters | **Yes** |
 | `thesis/references.bib` | Every source you cite | **Yes** |
-| `_extensions/ReadyResearchersTemplates/` | The Allegheny CIS PDF format (LaTeX template) | Maybe |
+| `_extensions/ReadyResearchersTemplates/` | The Allegheny CIS PDF format (LaTeX template) | Rarely |
 | `.github/workflows/` | GitHub Actions that build the site and release the PDF | No |
 
 ## Quick Start: The Steps in Order
@@ -37,8 +38,9 @@ Template](#personalizing-the-template).
    `metadata.md` file for the course, including your name, honor code pledge,
 repository URLs, and project title, and have your readers approve it. See
 [Project Metadata and Contract](#project-metadata-and-contract).
-4. **Write your journal posts.** One template per post, in `posts/`. Keep each
-   `date` as given in the [Journal Schedule](#journal-schedule).
+4. **Write your journal posts.** One template per post, in `posts/`. Unless
+   there is a pressing need to change the dates, keep each `date` as given in
+the [Journal Schedule](#journal-schedule).
 5. **Write your thesis chapters.** In the `600` course you complete Chapters
    One and Two; in the `610` course you complete all five chapters. See
 [Senior Thesis Chapters](#senior-thesis-chapters).
@@ -156,10 +158,10 @@ You need three things installed on your own computer. All of them are free.
 3. **TinyTeX** — the LaTeX distribution used to build the thesis PDF. Install
    it once from a terminal with `quarto install tinytex`. Please note that it
 is also possible to use a full LaTeX distribution for your senior comprehensive
-project's chapters.
-
-You do not need to install LaTeX packages one by one; Quarto adds any package
-that a template requests.
+project's chapters. With that said, we advise that you use TinyTeX, as it is a
+lightweight LaTeX distribution that is easy to install and quick run. You do
+not need to install LaTeX packages one by one; Quarto adds any package that a
+template requests.
 
 ### Personalizing the Template
 
@@ -299,9 +301,14 @@ fail with a permission error.
    succeeds.
 7. Open the `Releases` tab and confirm that `SeniorThesis-1.0.0` is attached.
 
-If you tag the wrong commit, delete the tag with `git tag -d SeniorThesis-1.0.0`,
-delete it on the remote with `git push origin --delete SeniorThesis-1.0.0`, and
-tag again.
+If you tag the wrong commit, delete the tag with `git tag -d
+SeniorThesis-1.0.0`, delete it on the remote with `git push origin --delete
+SeniorThesis-1.0.0`, and tag again. Please note that these steps were written
+from the perspective of a student who had finished minor releases below `1.0`
+and was now ready to make the first major release of their senior thesis. If
+you are a student who is starting off with their first tagged release, please
+make sure that you use a `0.1.0` and then increase the version number according
+to the Semantic Versioning Standard.
 
 The above steps should build a version of your project and release it on GitHub!
 If something does not work correctly, please contact your first and second
