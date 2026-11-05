@@ -1,7 +1,7 @@
 ---
 title: "Reflection: Preparing for and Giving My Presentation"
 description: "Reflect on my experiences preparing for and delivering my senior comprehensive project presentation."
-date: "2026-12-03"
+date: "2026-11-12"
 ---
 
 **Requirement:** Reflect on your experiences preparing for and giving your
