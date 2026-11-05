@@ -37,6 +37,28 @@ semester, you are responsible for writing the following posts:
 Your writing assignments for the 610-level course will be released during the
 upcoming Spring 2027 semester.
 
+### Journal Schedule
+
+Each post has a template in this repository. Replace the placeholder text in
+each template with your own writing, and keep the `date` in the front matter as
+given so that your posts appear in the correct order in the journal listing.
+
+| Due date          | Category     | Post                                              | Template                                    |
+|:------------------|:-------------|:--------------------------------------------------|:--------------------------------------------|
+| Monday, Nov. 2    | `activity`   | State and explain the project title               | `posts/activity/project-title.qmd`          |
+| Monday, Nov. 9    | `activity`   | Outline of Chapter One                            | `posts/activity/chapter-one-outline.qmd`    |
+| Monday, Nov. 16   | `activity`   | Outline of Chapter Two                            | `posts/activity/chapter-two-outline.qmd`    |
+| Monday, Nov. 23   | `reflection` | Current version of the computational artifact     | `posts/reflection/artifact-reflection.qmd`  |
+| Friday, Dec. 4    | `reflection` | Preparing for and giving the presentation         | `posts/reflection/presentation-reflection.qmd` |
+| Monday, Dec. 7    | `feedback`   | Feedback on the 600-level course                  | `posts/feedback/course-feedback.qmd`        |
+| Thursday, Dec. 10 | `changelog`  | Work leading up to the `1.0` release              | `posts/changelogs/release-1.0.qmd`          |
+
+The schedule avoids the Fall 2026 All College Programming Day (Tuesday,
+November 3), the Thanksgiving break (Wednesday-Sunday, November 25-29), and the
+final exam period (Monday-Thursday, December 7-10). Please consult your course
+syllabus for the authoritative due date of each post, as well as for the
+expected length and evaluation criteria for each post.
+
 ### Senior Thesis Chapters
 
 All researchers in the 600-level course in Computer and Information Science must
