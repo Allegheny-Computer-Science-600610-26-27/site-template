@@ -1,9 +1,0 @@
----
-title: "Sample reflection post"
-date: "2025-08-29"
----
-
-![Image post thumbnail](thumbnail.jpg)
-
-Students complete these posts in response to various reflective prompts introduced
-throughout the semester.
