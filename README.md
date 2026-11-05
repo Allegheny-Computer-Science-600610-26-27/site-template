@@ -289,26 +289,7 @@ GitHub Actions, `updated` for repositories that publish from a branch, and
 `enabled` for repositories that had no Pages site. Always start with `--dry-run`,
 because a bare organization name matches every repository in the organization.
 
-#### Option 2: let each repository enable itself with an organization secret
-
-If you want a student repository to enable itself on its first push, add a secret
-named `PAGES_TOKEN` to the organization and grant it to the repositories for this
-assignment. The workflow already uses it when it exists:
-
-```yaml
-- name: Configure Pages
-  uses: actions/configure-pages@v5.0.0
-  with:
-    enablement: true
-    token: ${{ secrets.PAGES_TOKEN || github.token }}
-```
-
-The token must be a personal access token with the `repo` scope, or a GitHub App
-token with `administration:write` and `pages:write`. Treat it as sensitive: it can
-administer every repository the organization grants it to, so do not expose it to
-repositories that you do not control.
-
-#### Option 3: enable it yourself, in the browser
+#### Option 2: students enable the repository by themselves, performing steps in the browser
 
 The following steps are provided to help you enable site build for your research
 journal:
