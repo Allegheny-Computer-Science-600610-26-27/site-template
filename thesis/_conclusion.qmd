@@ -1,15 +1,105 @@
 # Conclusion
 
-Traditionally, this chapter addresses the areas proposed below as sections, although
-not necessarily in this order or organized as offered. However, the last section --
-"Ethical Implcations" is required for this chapter. See the heading below for more
-details.
+Traditionally, this chapter addresses the areas proposed below as sections,
+although not necessarily in this order or organized as offered. However, the
+last section -- "Ethical Implications" is required for this chapter. See the
+heading below for more details.
+
+<!--
+WRITING GUIDE for Chapter Five
+
+HTML comments are stripped from the PDF and the website; they are here for you
+to read while you draft.
+
+THE ONE RULE FOR THIS CHAPTER
+
+Introduce no new evidence. Every claim here must already be supported by
+Chapter Four, and every citation must already appear in Chapter Two. If you find
+yourself arguing something for the first time in the conclusion, the argument
+belongs in an earlier chapter.
+
+WHAT THIS CHAPTER HAS TO DO
+
+1. Answer each research question from Chapter One, and say plainly whether the
+   answer is yes, no, or partial.
+2. Compare your result with the work reviewed in Chapter Two. Did you reproduce,
+   contradict, or extend it?
+3. Name your contribution in a form a reader could repeat to someone else.
+4. State the limitations and risks that remain, without either hiding them or
+   using them to excuse the work.
+5. Propose next steps that are specific enough to start on and ordered by
+   importance.
+6. Return to the ethical questions from Chapters One, Three, and Four.
+
+HONESTY IS GRADED
+
+Overclaiming is the most common way a strong project loses credit. If your
+experiments covered three Java projects on one machine, the finding is about
+those projects on that machine. Say so, then explain why it still matters.
+-->
 
 ## Summary of Results
 
+<!--
+Summarize the problem, the method, the main findings, and the contribution in a
+few paragraphs. A reader who reads only this section should learn what you did
+and what you found, without encountering a single new number.
+-->
+
+## Answering the Research Questions
+
+<!--
+Answer each research question from Chapter One in a sentence or two, and point
+to the section of Chapter Four that supports the answer. If a question remains
+only partly answered, say what evidence would settle it.
+-->
+
+## Contributions and Significance
+
+<!--
+State your contributions as a short list, each one tied to evidence:
+
+- A tool that ... (Chapter Three; evaluated in Section 4.3)
+- Evidence that ... (Table 4)
+- A dataset and replication package that ...
+
+Then explain the practical and theoretical significance: who can use this, and
+what does it change? Keep this proportionate to what you actually demonstrated.
+-->
+
+## Limitations and Risks
+
+<!--
+Consolidate the limitations scattered through the earlier chapters: scope,
+datasets, platforms, threats to validity, and anything about the artifact's
+release that could cause harm or misuse. Say what a careful user should be told
+before they rely on your result.
+-->
+
 ## Future Work
+
+<!--
+Propose future work that follows from what you found and from what you could not
+do. Prefer specific, feasible, prioritized items over a wish list:
+
+1. Immediate: the next experiment suggested by your results, with the obstacle
+   named.
+2. Near term: a capability the artifact needs, and why it was out of scope here.
+3. Longer term: the research direction this work opens.
+
+For each item, say who might do it and what would have to be true for it to
+succeed.
+-->
 
 ## Future Ethical Implications and Recommendations
 
 Especially as pertains to the public release or use of your software or methods, what
 unresolved or special issues remain? What recommendations might you make?
+
+<!--
+Close the loop opened in Chapter One: revisit each ethical issue you named there
+and say what your project did about it, what it could not fix, and what the
+release of this artifact now makes possible. Finish with concrete
+recommendations for whoever uses, extends, or deploys your work, and for whoever
+maintains the repository after you graduate.
+-->
