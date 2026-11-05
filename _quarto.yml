@@ -2,13 +2,13 @@ project:
   type: website
   output-dir: _site
   render:
-  - "*.qmd"
-  - "!*.md"
+    - "*.qmd"
+    - "!*.md"
 execute:
   freeze: auto
 author:
-  - name: A. Student
-    email: astudent@allegheny.edu
+  - name: Gregory M. Kapfhammer
+    email: gkapfham@allegheny.edu
 website:
   title: "ReadyResearchers Template"
   navbar:
