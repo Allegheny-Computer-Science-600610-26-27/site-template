@@ -27,7 +27,9 @@ If the artifact did not beat the baseline, say so, and then do the most valuable
 work in the chapter: explain why. Was the dataset too small? Was the comparison
 unfair? Did the implementation not exercise the idea? An honest negative finding
 with a careful explanation earns more credit than a positive finding you cannot
-defend. Do not quietly omit runs that went badly.
+defend. Please do not quietly omit runs that went badly. Instead, make sure to
+talk with your first and second reader(s) about all of your data!
+
 -->
 
 ## Research Questions and Experiment Mapping
@@ -54,7 +56,8 @@ Restate the design from Chapter Three in enough operational detail to repeat it:
 the machine, the inputs, the number of repetitions, the order of conditions, and
 how you controlled for differences that are not part of the study. State what
 you would have done if a run crashed or produced no output, and then say whether
-that happened.
+that happened. Make sure to highlight any additional details not discussed
+in a prior chapter as it pertains to the design of your experiments.
 -->
 
 ## Baseline and Success Criteria
@@ -62,9 +65,9 @@ that happened.
 <!--
 A result means nothing without a comparison. Name the baseline: the existing tool,
 the unmodified version of your system, the human process, or a naive method.
-Explain why that baseline is the fair comparison. Then state the threshold for
+Next, explain why that baseline is the fair comparison. Now you can state the threshold for
 success in numbers, and say whether the threshold came from the literature, from
-a practical requirement, or from your own judgement.
+a practical requirement, or from your own judgment.
 -->
 
 ## Evaluation
