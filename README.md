@@ -224,7 +224,17 @@ resolve correctly.
 
 ### Enabling Site Build
 
-This site deploys via Github Pages using the Quarto static site building system.
+This site deploys via Github Pages using the Quarto static site building
+system. The following instructions are representative in nature and may require
+customization for each student depending on their own GitHub settings and
+repository configuration. Please contact your first reader, second reader, or
+the coordinator for your 600-level course if you have any questions about
+enabling site build for your research journal. With that said, each student
+researcher should invest the time needed to troubleshoot the setup of their own
+research journal and the deployment of it to GitHub Pages. Please note that a
+working deployment should also feature a link to the PDF that contents the
+chapters of your senior thesis. The following steps are provided to help you
+enable site build for your research journal:
 
 1. Go to the `Settings` menu on this repository and locate the `Pages` submenu.
 
