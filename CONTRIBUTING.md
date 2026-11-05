@@ -12,9 +12,9 @@ for more details about the course or the assessment requirements.
 ## Overview
 
 This assignment requires a researcher to write a Markdown and LaTeX document,
-stored in the file `thesis/index.md` and one of the "underscore files" for the
-senior thesis chapters (e.g., `thesis/_introduction.md` or
-`thesis/_related_work.md`) that describes the key aspects of a senior thesis
+stored in the file `thesis/index.qmd` and one of the "underscore files" for the
+senior thesis chapters (e.g., `thesis/_introduction.qmd` or
+`thesis/_related_work.qmd`) that describes the key aspects of a senior thesis
 research project. Please refer to the source code in these files for an
 explanation of the components of a senior thesis and the way in which you create
 them in Markdown and/or LaTeX.
