@@ -18,6 +18,11 @@ _site/*
 *.aux
 *.cut
 
+# The allegheny-cis PDF extension ships its own Pandoc LaTeX template. Keep it
+# tracked: without it `quarto render` fails in GitHub Actions with
+# "NotFound: ... lstat '<repo>/thesis/thesis.tex'".
+!_extensions/ReadyResearchersTemplates/allegheny-cis/thesis.tex
+
 site_libs/
 
 **/*.quarto_ipynb
