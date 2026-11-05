@@ -4,11 +4,117 @@ This chapter describes your experimental set up and evaluation. It should also
 produce and describe the results of your study. The section titles below offer
 a typical structure used for this chapter.
 
+<!--
+WRITING GUIDE for Chapter Four
+
+HTML comments are stripped from the PDF and the website; they are here for you
+to read while you draft.
+
+WHAT A READER NEEDS FROM THIS CHAPTER
+
+1. Which research question each experiment answers.
+2. Exactly what was run, so that the experiment could be repeated.
+3. What counted as success, decided before you ran anything.
+4. The data itself, in a table or figure, not only in prose.
+5. What the data supports, separated from what you hope it supports.
+
+Never introduce an experiment in this chapter that Chapter Three did not
+describe, and never report a metric that Chapter Three did not define.
+
+A NEGATIVE RESULT IS STILL A RESULT
+
+If the artifact did not beat the baseline, say so, and then do the most valuable
+work in the chapter: explain why. Was the dataset too small? Was the comparison
+unfair? Did the implementation not exercise the idea? An honest negative finding
+with a careful explanation earns more credit than a positive finding you cannot
+defend. Do not quietly omit runs that went badly.
+-->
+
+## Research Questions and Experiment Mapping
+
+<!--
+List your research questions and the experiment that addresses each one:
+
+| Research question | Experiment | Metric | Success threshold |
+|:------------------|:-----------|:-------|:------------------|
+| RQ1: ...          | ...        | ...    | ...               |
+
+Two or three focused questions are better than six that overlap. Each row must
+have a non-empty entry in every column; a blank threshold means you will not be
+able to say whether the experiment succeeded.
+-->
+
 ## Experimental Design
 
-Especially as it pertains to responisble computing, if conducting experiments or
+Especially as it pertains to responsible computing, if conducting experiments or
 evaluations that involve particular ethical considerations, detail those issues here.
+
+<!--
+Restate the design from Chapter Three in enough operational detail to repeat it:
+the machine, the inputs, the number of repetitions, the order of conditions, and
+how you controlled for differences that are not part of the study. State what
+you would have done if a run crashed or produced no output, and then say whether
+that happened.
+-->
+
+## Baseline and Success Criteria
+
+<!--
+A result means nothing without a comparison. Name the baseline: the existing tool,
+the unmodified version of your system, the human process, or a naive method.
+Explain why that baseline is the fair comparison. Then state the threshold for
+success in numbers, and say whether the threshold came from the literature, from
+a practical requirement, or from your own judgement.
+-->
 
 ## Evaluation
 
+<!--
+For each metric, say how it is computed and in what units, then report the value
+with some indication of variation: repeated runs, a confidence interval, a
+standard deviation, or a clear statement that the measurement is deterministic.
+Where you use statistics, name the test and check its assumptions; a p-value
+without a stated test is not evidence.
+
+Every table and figure needs three things: a caption that explains what is
+shown, a sentence in the text that refers to it, and a sentence that interprets
+it. "Table 2 shows the runtimes" is a reference; "Table 2 shows that the
+optimized version is faster only when the input exceeds 10,000 records, which
+suggests that setup cost dominates on small inputs" is an interpretation.
+-->
+
+## Results
+
+<!--
+Present the outcomes in the order of your research questions. For each one:
+restate the question in a sentence, point to the evidence, state the finding,
+and state how confident you are. Keep observation and interpretation in separate
+sentences so that a reader can tell which is which.
+-->
+
+## Unexpected and Negative Findings
+
+<!--
+Report results that did not fit your expectations, including runs that failed.
+Explain what you think caused each one and what it implies for the method or for
+future work. This section strengthens a thesis; it does not weaken it.
+-->
+
 ## Threats to Validity
+
+<!--
+Organize the discussion with the standard categories, keeping only those that
+apply to your study:
+
+- **Internal validity** — could something other than your treatment explain the
+  result (ordering effects, caching, machine load, a bug in the harness)?
+- **External validity** — how far do the results generalize beyond the datasets,
+  languages, platforms, or users you studied?
+- **Construct validity** — do your metrics actually measure the concept you
+  claim to measure (does line coverage really mean test quality)?
+- **Conclusion validity** — are the statistical or logical inferences sound
+  given the number of runs and the variance you observed?
+
+For each threat, say what you did to mitigate it. A threat you cannot mitigate
+should be named anyway, because your readers will find it.
+-->
