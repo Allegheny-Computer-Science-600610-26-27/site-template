@@ -263,7 +263,7 @@ workflow still builds the journal and the thesis PDF, writes an explanation into
 the run summary, and **skips** the deploy step instead of failing. You get a green
 run with a warning instead of a red X.
 
-#### Option 1 (recommended for the course coordinator): enable every repository at once
+#### Option 1: performed by the course coordinator who can enable every repository at once
 
 The repository owner can enable Pages once per repository, after which every
 later build deploys with no intervention. The script
