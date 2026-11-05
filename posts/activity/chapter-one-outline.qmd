@@ -36,8 +36,9 @@ For each section above, answer three questions:
 
 ## Planned length and sources
 
-- Approximate number of words planned for this chapter:
-- Approximate number of sources planned for this chapter:
+- Approximate number of sections planned for this chapter:
+- Approximate number of paragraphs planned for this chapter:
+- Approximate number of referenced sources planned for this chapter:
 
 ## Reminders
 
