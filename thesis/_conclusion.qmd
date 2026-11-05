@@ -2,7 +2,7 @@
 
 Traditionally, this chapter addresses the areas proposed below as sections,
 although not necessarily in this order or organized as offered. However, the
-last section -- "Ethical Implications" is required for this chapter. See the
+last section --- "Ethical Implications" is required for this chapter. See the
 heading below for more details.
 
 <!--
