@@ -1,8 +1,5 @@
 # CMPSC 600 Senior Comprehensive Project
 
-[![Build Research Journal Site](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml)
-[![Release Senior Thesis](../../actions/workflows/release.yml/badge.svg)](../../actions/workflows/release.yml)
-
 For more information about the course requirements for your 600-level course in
 Computer and Information Science, please refer to the syllabus for your course.
 To enable you to complete many of the deliverables for the 600-level course,
@@ -19,17 +16,17 @@ Your research journal contains short posts in one of the following categories:
 semester, you are responsible for writing the following posts:
 
 - Two `reflection` posts:
-    - Reflect on the current version of your computational artifact
-    - Reflect on your experiences preparing for and giving your presentation
+  - Reflect on the current version of your computational artifact
+  - Reflect on your experiences preparing for and giving your presentation
 - Three `activity` posts:
-    - State and explain the title of your senior comprehensive project
-    - Provide and justify the outline for Chapter One of your senior thesis
-    - Provide and justify the outline for Chapter Two of your senior thesis
+  - State and explain the title of your senior comprehensive project
+  - Provide and justify the outline for Chapter One of your senior thesis
+  - Provide and justify the outline for Chapter Two of your senior thesis
 - One `feedback` post:
-    - Offer feedback to both your classmates and your instructors on work in the
-      600-level course in Computer and Information Science
+  - Offer feedback to both your classmates and your instructors on work in the
+    600-level course in Computer and Information Science
 - One `changelog` post:
-    - Summarize all work completed leading up to a `1.0` release of your senior
+  - Summarize all work completed leading up to a `1.0` release of your senior
     comprehensive project that is visible through a website hosted on GitHub
     pages and a release of your senior thesis as a PDF document through the
     `Releases` tab inside of your GitHub repository
@@ -45,18 +42,19 @@ given so that your posts appear in the correct order in the journal listing.
 
 | Due date          | Category     | Post                                              | Template                                    |
 |:------------------|:-------------|:--------------------------------------------------|:--------------------------------------------|
-| Monday, Nov. 2    | `activity`   | State and explain the project title               | `posts/activity/project-title.qmd`          |
-| Monday, Nov. 9    | `activity`   | Outline of Chapter One                            | `posts/activity/chapter-one-outline.qmd`    |
-| Monday, Nov. 16   | `activity`   | Outline of Chapter Two                            | `posts/activity/chapter-two-outline.qmd`    |
-| Monday, Nov. 23   | `reflection` | Current version of the computational artifact     | `posts/reflection/artifact-reflection.qmd`  |
-| Friday, Dec. 4    | `reflection` | Preparing for and giving the presentation         | `posts/reflection/presentation-reflection.qmd` |
-| Monday, Dec. 7    | `feedback`   | Feedback on the 600-level course                  | `posts/feedback/course-feedback.qmd`        |
-| Thursday, Dec. 10 | `changelog`  | Work leading up to the `1.0` release              | `posts/changelogs/release-1.0.qmd`          |
+| Thursday, Nov. 5  | `activity`   | State and explain the project title               | `posts/activity/project-title.qmd`          |
+| Thursday, Nov. 5  | `activity`   | Outline of Chapter One                            | `posts/activity/chapter-one-outline.qmd`    |
+| Thursday, Nov. 12 | `activity`   | Outline of Chapter Two                            | `posts/activity/chapter-two-outline.qmd`    |
+| Thursday, Nov. 12 | `reflection` | Current version of the computational artifact     | `posts/reflection/artifact-reflection.qmd`  |
+| Thursday, Nov. 19 | `feedback`   | Feedback on the 600-level course                  | `posts/feedback/course-feedback.qmd`        |
+| Thursday, Dec. 3  | `reflection` | Preparing for and giving the presentation         | `posts/reflection/presentation-reflection.qmd` |
+| Thursday, Dec. 3  | `changelog`  | Work leading up to the `1.0` release              | `posts/changelogs/release-1.0.qmd`          |
 
 The schedule avoids the Fall 2026 All College Programming Day (Tuesday,
-November 3), the Thanksgiving break (Wednesday-Sunday, November 25-29), and the
-final exam period (Monday-Thursday, December 7-10). Please consult your course
-syllabus for the authoritative due date of each post, as well as for the
+November 3) and the Thanksgiving break (Wednesday-Sunday, November 25-29), so
+every due date falls on a Thursday on which the class actually meets. The last
+class meeting of the semester is Thursday, December 3. Please consult your
+course syllabus for the authoritative due date of each post, as well as for the
 expected length and evaluation criteria for each post.
 
 ### Senior Thesis Chapters
@@ -114,9 +112,9 @@ repository. All release numbers for your writing in this repository should
 adhere to the [Semantic Versioning](http://semver.org/) standard expected of
 GitHub projects. Here this means that:
 
-* `Major version` releases feature a tag number change reflecting full
+- `Major version` releases feature a tag number change reflecting full
 releases; generally these start at `1.0.0`
-* `Minor version` releases indicate small changes or additions to documents;
+- `Minor version` releases indicate small changes or additions to documents;
 typically these increment the second digit in the version (e.g. `1.1.0`)
 
 Please note that your readers will only read the PDF generated from "tagged"
@@ -125,8 +123,8 @@ releases of the file `SeniorThesis.pdf` that has a version number greater than
 
 That is:
 
-* if your commit is tagged `SeniorThesis-1.0.0`, then
-* the file `SeniorThesis.pdf` should be available for download in the
+- if your commit is tagged `SeniorThesis-1.0.0`, then
+- the file `SeniorThesis.pdf` should be available for download in the
 "Releases" tab in your GitHub repository for this project under the name
 `SeniorThesis-1.0.0`.
 
@@ -136,7 +134,7 @@ the `thesis/index.qmd` and:
 1. Use `git` to `commit` your file changes using a `git commit` command
 2. Create your first tag for this repository: type `git tag
    senior_thesis-0.1.0`.
-3. You are now ready to push your changes with the tag number using  `git push
+3. You are now ready to push your changes with the tag number using `git push
    -u origin main --tags`
 
 The above steps should build a version of your project and release it on GitHub!
