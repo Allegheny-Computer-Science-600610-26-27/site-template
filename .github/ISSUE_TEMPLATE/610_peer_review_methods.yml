@@ -1,0 +1,106 @@
+name: Methods review (CMPSC 610)
+description: Provide peer review feedback for the Methods chapter of this thesis project.
+title: "Spring 2025 Methods Peer Review"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please respond to the following questions about the methods chapter.
+    validations:
+      required: true  
+  - type: textarea
+    attributes:
+      label: Summary
+      description: "In your own words, describe an overall summary/overview of the project that the methods chapter describes; what did this research produce?"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Methods used
+      description: "This section describes which of the following:"
+      options:
+        - label: "Algorithms employed"
+        - label: "Programming languages used"
+        - label: "Libraries implemented"
+        - label: "Hardware required or deployed"
+        - label: "Underlying project infrastructure"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Diagrams and figures
+      description: This section contains sufficient diagrams, figures, or tables.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Source code
+      description: The chapter acknowledges and/or clearly links to a GitHub repository for the project.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Sources
+      description: This section cites an appropriate amount of sources with regard to technical tools, platforms, et al.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Usage
+      description: The section describes how to use the computational artifact described therein.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Inputs and outputs
+      description: The chapter describes expected inputs, outputs, and complete details required to use or run the computational artifact.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Ethical concerns
+      description: The chapter discusses how the method addresses ethical concerns raised in previous chapters with specific, insightful examples.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Quality rating
+      description: "Rate the quality of this chapter on the following scale: 1 (low quality) - 5 (highest quality)"
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: General Introduction feedback
+      description: "Highlight 3 areas (excluding grammar) that the author should develop further. Include: one minor, one moderate, and one major revision area."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: General Introduction positive reinforcement
+      description: "Choose at least 1 area (excluding grammar) that the author has done well in this chapter. Offer some feedback as to what you find particularly effective and why."
+    validations:
+      required: true

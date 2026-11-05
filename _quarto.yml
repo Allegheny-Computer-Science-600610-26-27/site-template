@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+  - "*.qmd"
+  - "!*.md"
+execute:
+  freeze: auto
+author:
+  - name: A. Student
+    email: astudent@allegheny.edu
+website:
+  title: "ReadyResearchers Template"
+  navbar:
+    right:
+      - text: "Senior Thesis"
+        href: thesis/index.qmd
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+format:
+  html:
+    theme: journal
+    css: styles.css

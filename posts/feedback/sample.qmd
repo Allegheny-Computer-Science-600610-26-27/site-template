@@ -1,0 +1,9 @@
+---
+title: "Sample feedback post"
+date: "2025-08-29"
+---
+
+![Image post thumbnail](thumbnail.jpg)
+
+This is a sample post in which students provide feedback on process or other prompts
+provided as part of class activities or assignments.

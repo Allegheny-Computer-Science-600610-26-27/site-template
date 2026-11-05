@@ -1,0 +1,36 @@
+# Introduction
+
+This chapter describes your completed senior thesis work,
+including the overall aims  and the background motivating your research. Whenever
+possible, you should use one or more concrete examples and technical diagrams.
+
+It is often useful and necessary to separate the introduction into multiple sections.
+Several possible sections are proposed below, you can use these or distribute your
+introductory text into sections in another way.
+
+The headings below propose _one way_ you might structure this section of the document.
+
+## Motivation
+
+## Current State of the Art
+
+## Goals of the Project
+
+## Ethical Implications
+
+This document requires that you discuss the ethical implications of your work -- no
+matter how benign you consider the outcome of your project. As several major studies
+of ethical issues in computer science assert: _no project is completely value-neutral_.
+
+To assist you in elaborating on these issues, the following areas are topics you might
+consider addressing. You do not need to address all of them.
+
+* Information Privacy
+* Information Accuracy (e.g. can contain reliability)
+* Potential Misuse (e.g. computer crime, unintended consequences)
+* Second- or Third-Party Risk (e.g. safety)
+* Data Collection Issues (e.g. issues inherent in collecting data)
+* Algorithmic or Data Bias
+* Potential Power Difference / Social Imbalance / Issues in Equity
+
+In addition, reflect on ways that the above harms can be or are mitigated by your work.

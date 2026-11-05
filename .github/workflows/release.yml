@@ -1,0 +1,39 @@
+name: Release Senior Thesis
+on:
+  push:
+    tags:
+      - '*.*.*'
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
+        if: always()
+      - name: Setup Python
+        if: always()
+        uses: actions/setup-python@v5.1.1
+        with:
+          python-version: 3.10.6
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        if: always()
+      - name: Create LaTeX enviroment
+        run: |
+          quarto install tinytex
+        if: always()
+      - name: Render the PDF
+        run: |
+          quarto render thesis/index.qmd --to allegheny-cis-pdf
+          cp _site/thesis/index.pdf _site/thesis/SeniorThesis.pdf
+        if: always()
+      - name: Create release
+        id: create-release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            _site/thesis/SeniorThesis.pdf
+          token: ${{ secrets.GITHUB_TOKEN }}
+          make_latest: true

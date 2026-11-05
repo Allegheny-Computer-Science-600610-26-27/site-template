@@ -1,0 +1,75 @@
+name: Related work review (CMPSC 600)
+description: Provide peer review feedback for the Related Work chapter of this thesis project.
+title: Fall 2024 Related Work Peer Review
+body:
+  - type: markdown
+    attributes:
+      value: Please respond to the following questions about the introduction chapter.
+  - type: checkboxes
+    attributes:
+      label: Source cohesion
+      description: After reading the the Related Work section, it's clear why the sources used were included.
+      options:
+        - label: "Yes"
+        - label: "No"
+  - type: textarea
+    attributes:
+      label: Source cohesion description
+      description: Tell the author more about your thoughts on source cohesion. What didn't make sense?
+  - type: checkboxes
+    attributes:
+      label: Source authority
+      description: Sources used in this section are authoritative and appropriate to the project.
+      options:
+        - label: "Yes"
+        - label: "No"
+  - type: checkboxes
+    attributes:
+      label: Source quality
+      description: Rank the level of source quality demonstrated by the sources used.
+      options:
+        - label: "High"
+        - label: "Moderate"
+        - label: "Low"
+  - type: checkboxes
+    attributes:
+      label: Source organization
+      description: The author paid close attention to the order of sourcing to develop ideas from the literature.
+      options:
+        - label: "Yes"
+        - label: "No"
+  - type: textarea
+    attributes:
+      label: Source organization description
+      description: Provide a rough outline of the topics presented in the Related Worksection.
+  - type: checkboxes
+    attributes:
+      label: Source interactions, relationships
+      description: The author discusses the relationships between sources of different categories or themes.
+      options:
+        - label: "Yes"
+        - label: "No"
+  - type: textarea
+    attributes:
+      label: Source interactions, relationships description
+      description: Where would additional discussion occur? What source areas lack clear connection?
+  - type: checkboxes
+    attributes:
+      label: Source usage
+      description: The author cites sources in the Related Work using the appropriate citation format.
+      options:
+        - label: "Yes"
+        - label: "No"
+  - type: checkboxes
+    attributes:
+      label: Source variety
+      description: Sources demonstrate a wide variety of viewpoints and publication outlets.
+      options:
+        - label: "Yes"
+        - label: "No"
+  - type: textarea
+    attributes:
+      label: General Related Work feedback
+      description: "Highlight 3 areas (excluding grammar) that the author should
+        develop further. Include: one minor, one moderate, and one major
+        revision area."

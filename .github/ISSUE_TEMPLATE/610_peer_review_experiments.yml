@@ -1,0 +1,95 @@
+name: Experiments review (CMPSC 610)
+description: Provide peer review feedback for the Experiments chapter of this thesis project.
+title: "Spring 2025 Experiments Peer Review"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please respond to the following questions about the Experiments chapter.
+    validations:
+      required: true  
+  - type: textarea
+    attributes:
+      label: Experimental design
+      description: "In your own words, summarize the writer's experimental design."
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Missing features
+      description: "This section _lacks_ which of the following:"
+      options:
+        - label: "Figures"
+        - label: "Tables"
+        - label: "Charts"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Diagrams and figures
+      description: This section contains sufficient diagrams, figures, or tables.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Analysis
+      description: The writer's conclusions about the results are reasonable and rooted in the data presented.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Appraisal of success
+      description: The chapter takes a clear stance on the outcome of the experiment(s).
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Threats to validity
+      description: The section adequately describes any threats to validity of the results.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Ethical concerns
+      description: The chapter discusses ethical implications inherent in the experimental approach, discussion, and/or implications.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Quality rating
+      description: "Rate the quality of this chapter on the following scale: 1 (low quality) - 5 (highest quality)"
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: General feedback
+      description: "Highlight 3 areas (excluding grammar) that the author should develop further. Include: one minor, one moderate, and one major revision area."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: General positive reinforcement
+      description: "Choose at least 1 area (excluding grammar) that the author has done well in this chapter. Offer some feedback as to what you find particularly effective and why."
+    validations:
+      required: true

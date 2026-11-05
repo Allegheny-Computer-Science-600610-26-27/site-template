@@ -1,0 +1,26 @@
+# Quarto preview/render
+
+_site/*
+.quarto/*
+
+# SWP files, and other OS-based nonsense
+
+.DS_Store
+*.swp*
+
+/.quarto/
+
+*.json
+*.out
+*.tex
+*.out
+*.log 
+*.aux
+*.cut
+
+site_libs/
+
+**/*.quarto_ipynb
+
+# HTML files
+*.html

@@ -1,0 +1,12 @@
+# options specified here will apply to all posts in this folder
+
+# freeze computational output
+# (see https://quarto.org/docs/projects/code-execution.html#freeze)
+freeze: true
+
+# Lock all posts in this folder to a given category
+categories: [🪵 changelog]
+
+title: "Changelog"
+pagetitle: 'Changelog: Thesis: {{< meta "Thesis Version" >}}; Artifact {{< meta "Artifact Version" >}}'
+image: changelog.jpg

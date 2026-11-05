@@ -1,0 +1,244 @@
+name: Thesis document review (CMPSC 610)
+description: Provide holistic peer review of this thesis project.
+title: "Spring 2025 Holistic Thesis Review"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please respond to the following questions about the thesis document you've been assigned. Note that this process may take much longer to complete than a single class period.
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Introduction
+      description: "The document contains a complete Introduction."
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Quality rating (Introduction)
+      description: "Rate the quality of this chapter on the following scale: 1 (low quality) - 5 (highest quality)"
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Comments on Introduction
+      description: "Describe the reasons that informed your rating of this chapter."
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Related Work
+      description: "The document contains a complete Related Work chapter."
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Sourcing
+      description: "The Related Works chapter cites sources."
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Source formatting
+      description: "The Related Works chapter correctly cites sources using ACM format."
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Quality rating (Related Work)
+      description: "Rate the quality of this chapter on the following scale: 1 (low quality) - 5 (highest quality)"
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Comments on Related Works
+      description: "Describe the reasons that informed your rating of this chapter."
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Methods
+      description: "The document contains a complete Methods chapter."
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Figures and Diagrams
+      description: "The chapter contains figures and diagrams illustrating the researcher's method."
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Quality rating (Methods)
+      description: "Rate the quality of this chapter on the following scale: 1 (low quality) - 5 (highest quality)"
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Comments on Methods
+      description: "Describe the reasons that informed your rating of this chapter."
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Experiments
+      description: "The document contains a complete Experiments chapter."
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Display of results
+      description: "The chapter contains tables, charts, or plots that display experimental results."
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Discussion of results
+      description: "The chapter discusses experimental results."
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Quality rating (Experiments)
+      description: "Rate the quality of this chapter on the following scale: 1 (low quality) - 5 (highest quality)"
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Comments on Experiments
+      description: "Describe the reasons that informed your rating of this chapter."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Summary
+      description: "In your own words, describe an overall summary/overview of the project that that document presents."
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: "Supporting evidence"
+      description: "This document contains sufficient evidence to support the results and conclusions drawn from the research presented."
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Future Work
+      description: "The document contains a complete Future Work chapter."
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Quality rating (Future Work)
+      description: "Rate the quality of this chapter on the following scale: 1 (low quality) - 5 (highest quality)"
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Future Directions
+      description: "The document discusses future directions for this research."
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Comments on Future Work
+      description: "Describe the reasons that informed your rating of this chapter."
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Unresolved issues
+      description: "How many unresolved issues does this repository have?"
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - "5 or more"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Quality rating (Document)
+      description: "Rate the quality of this chapter on the following scale: 1 (low quality) - 5 (highest quality)"
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Formative summary comments
+      description: "Describe the reasons that informed your rating of this thesis document."
+    validations:
+      required: true

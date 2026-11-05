@@ -1,0 +1,29 @@
+---
+name: Final Reader Feedback (CMPSC 600)
+about: Provide final reader feedback for a student's thesis document.
+title: "Final Reader Feedback"
+label: 'enhancement'
+---
+
+The following categories provide feedback for you to complete at three levels:
+
+- `YOU MUST`: revisions of high significance which affect your ability to pass `600`
+- `YOU SHOULD`: revisions of moderate significance which influence your grade in the course at the whole letter grade level
+- `YOU COULD`: revision of minor significance which may raise your `600` grade by a half a letter or are future considerations
+
+## You Must
+
+- Item 1
+- Item 2
+
+## You Should
+
+- Item 1
+- Item 2
+
+## You Could
+
+- Item 1
+- Item 2
+
+

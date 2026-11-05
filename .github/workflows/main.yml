@@ -1,0 +1,61 @@
+name: Build Research Journal
+on:
+  push:
+    branches:
+      - main
+    tags-ignore:
+      - '*.*.*'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.7
+        if: always()
+      - name: Setup Python
+        if: always()
+        uses: actions/setup-python@v5.1.1
+        with:
+          python-version: 3.10.6
+      - name: Set up grading environment
+        run: |
+          sudo apt-get update
+          sudo apt install --only-upgrade python3-pip
+          sudo python -m pip install gatorgrade --ignore-installed PyYAML
+          sudo python -m pip install yq
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        if: always()
+      - name: Create LaTeX enviroment
+        run: |
+          quarto install tinytex
+        if: always()
+      - name: Setup Pages
+        uses: actions/configure-pages@v5.0.0
+        if: always()
+      - name: Build with Quarto
+        run: |
+          quarto render
+        if: always()
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: ./_site
+        if: always()
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4.0.5

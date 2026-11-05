@@ -1,0 +1,82 @@
+name: Future Work review (CMPSC 610)
+description: Provide peer review feedback for the Future Work chapter of this thesis project.
+title: "Spring 2025 Future Work Peer Review"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please respond to the following questions about the Future Work chapter.
+    validations:
+      required: true  
+  - type: checkboxes
+    attributes:
+      label: Recap
+      description: This section reviews what the writer accomplished.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Characterization of outcome(s)
+      description: The writer presents and reflects on the achievement of the project accurately and honestly.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Threats to validity
+      description: The section adequately describes any threats to validity of the results.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Ethical concerns
+      description: The chapter concludes ethical discussions started in previous chapters, even if not with definitive answers.
+      options:
+        - label: "Yes"
+        - label: "No"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Quality rating
+      description: "Rate the quality of this chapter on the following scale: 1 (low quality) - 5 (highest quality)"
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Future direction(s)
+      description: "Identify 3-5 future directions that the chapter identifies."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Summary
+      description: "In your own words, summarize the main take-aways from this chapter."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: General feedback
+      description: "Highlight 3 areas (excluding grammar) that the author should develop further. Include: one minor, one moderate, and one major revision area."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: General positive reinforcement
+      description: "Choose at least 1 area (excluding grammar) that the author has done well in this chapter. Offer some feedback as to what you find particularly effective and why."
+    validations:
+      required: true
