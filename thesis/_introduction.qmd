@@ -1,7 +1,7 @@
 # Introduction
 
 This chapter describes your completed senior thesis work,
-including the overall aims  and the background motivating your research. Whenever
+including the overall aims and the background motivating your research. Whenever
 possible, you should use one or more concrete examples and technical diagrams.
 
 It is often useful and necessary to separate the introduction into multiple sections.
@@ -10,11 +10,98 @@ introductory text into sections in another way.
 
 The headings below propose _one way_ you might structure this section of the document.
 
+<!--
+WRITING GUIDE for Chapter One
+
+HTML comments like this one are stripped from the PDF and the website. They are
+here so that you can read them while you draft. Leave them in place.
+
+A reader who finishes only this chapter should be able to answer five questions:
+what problem you address, why it matters, to whom it matters, what you built,
+and which parts of the result are new.
+
+1. State one focused problem, question, or objective. A classmate who reads your
+   first two paragraphs should be able to repeat it back to you in one sentence.
+   If they cannot, the problem is still too broad.
+
+2. Say who the audience is and what changes for that audience if the problem is
+   solved. "Other researchers" is almost never a good enough answer on its own;
+   name the field, the tool, the course, the organization, or the community.
+
+3. Define the boundary of the work. What is in scope, what is deliberately out
+   of scope, and what are you assuming to be true about the environment, the
+   data, or the users?
+
+4. Define the technical vocabulary. Any term a competent reader from another
+   area of computer science would not recognize belongs here, not in Chapter
+   Three.
+
+5. Separate your contribution from prior work. It is not enough to say that
+   other systems exist; say what you do that they do not.
+
+6. Open the ethical discussion. Don't forget that chapter five returns to it,
+   so plant the ideas here rather than dropping them in at the end.
+
+A useful test of a draft: give it to a classmate for five minutes and ask them
+to write down your problem statement. Compare their sentence to yours.
+-->
+
 ## Motivation
+
+<!--
+Explain the problem before you explain your solution. Two or three paragraphs is
+usually enough when they answer: What is the problem? Who experiences it? Why
+has it not been solved already? What are the consequences of leaving it unsolved?
+
+Avoid openings such as "Computers are everywhere" or "In recent years,
+technology has advanced rapidly." Specific beats generic: name the system, the
+dataset, the practice, or the community you are writing about, and cite evidence
+that the problem is real.
+-->
 
 ## Current State of the Art
 
+<!--
+Summarize how the problem is handled today, by researchers and by practitioners.
+You do not need to write the full literature review here; Chapter Two does that.
+What you need here is enough context that a reader understands why your approach
+is a reasonable next step.
+-->
+
 ## Goals of the Project
+
+<!--
+State the goal so that it could be shown to be met or not met. "Improve software
+testing" cannot be evaluated. "Reduce the false-positive reports of a mutation
+testing tool on Java projects by 20% without losing real faults" can be.
+
+Then list the objectives that support the goal, and keep them traceable:
+
+  objective -> experiment in Chapter Four -> claim in Chapter Five
+
+If an objective has no experiment, it is not an objective; it is an aspiration.
+If a contribution has no objective behind it, you cannot defend it.
+-->
+
+## Scope and Assumptions
+
+<!--
+List the constraints you accept: the platforms you support, the languages your
+tool targets, the size of the datasets you can handle, the users you assume.
+Then list your assumptions and say what would break if each assumption failed.
+Readers trust a thesis that names its limits more than one that claims none.
+-->
+
+## Key Terminology
+
+<!--
+Define the terms the rest of the thesis depends on. A definition list works well:
+
+  **Mutation testing**: a technique that ... [@source]
+
+Keep this section short. If a definition runs longer than three sentences, it
+probably belongs in Chapter Two instead.
+-->
 
 ## Ethical Implications
 
@@ -26,11 +113,31 @@ To assist you in elaborating on these issues, the following areas are topics you
 consider addressing. You do not need to address all of them.
 
 * Information Privacy
-* Information Accuracy (e.g. can contain reliability)
-* Potential Misuse (e.g. computer crime, unintended consequences)
-* Second- or Third-Party Risk (e.g. safety)
-* Data Collection Issues (e.g. issues inherent in collecting data)
+* Information Accuracy (e.g., reliability)
+* Potential Misuse (e.g., computer crime, unintended consequences)
+* Second- or Third-Party Risk (e.g., safety)
+* Data Collection Issues (e.g., issues inherent in collecting data)
 * Algorithmic or Data Bias
 * Potential Power Difference / Social Imbalance / Issues in Equity
 
 In addition, reflect on ways that the above harms can be or are mitigated by your work.
+
+<!--
+Choose the two or three issues that genuinely apply to your project and discuss
+them in a paragraph each. A short, specific discussion of two real harms is
+stronger than a list that touches eight topics without committing to any of
+them.
+
+For each issue, answer: Who could be harmed? How would the harm occur? How
+likely and how serious is it? What does your project do to reduce it, and what
+remains unresolved? Chapter Five will ask you to revisit these questions.
+-->
+
+## Thesis Organization
+
+<!--
+Preview the chapters that follow, one or two sentences each, so that the reader
+knows what to expect and where your argument goes. For example: "Chapter Two
+reviews related work in mutation testing and in test-suite reduction. Chapter
+Three describes the architecture of the tool and the data used to evaluate it."
+-->
