@@ -19,7 +19,7 @@ chapter but has never met you. Could they rerun your study and get comparable
 results? If not, the chapter is missing something. Can you first and second
 reader(s) study this method and see clearly that you understand all of the
 technical details in this project? If not, then the chapter is missing
-something that shows you did furnish sufficient the technical details.
+something to demonstrate that you sufficiently understand the technical details.
 
 WHAT TO COVER
 
